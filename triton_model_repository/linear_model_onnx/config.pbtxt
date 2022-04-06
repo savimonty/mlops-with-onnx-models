@@ -1,0 +1,17 @@
+name: "linear_model_onnx"
+platform: "onnxruntime_onnx"
+max_batch_size: 0
+input [
+    {
+        name: "dense_input"
+        data_type: TYPE_FP32
+        dims: [ -1,1 ]
+    }
+]
+output [
+    {
+        name: "dense"
+        data_type: TYPE_FP32
+        dims: [ -1,1 ]
+    }
+]
